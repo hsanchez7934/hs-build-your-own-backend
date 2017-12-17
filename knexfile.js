@@ -13,7 +13,7 @@ module.exports = {
 
   test: {
     client: 'pg',
-    connection: process.env.DATABASE_URL || 'postgres://localhost/byob_test', //connect to palettepicker_test database
+    connection: process.env.DATABASE_URL || 'postgres://localhost/byob_test',
     migrations: {
       directory: './db/migrations'
     },
@@ -24,11 +24,11 @@ module.exports = {
   },
 
   production: {
-      client: 'pg',
-      connection: process.env.DATABASE_URL + `?ssl=true`,
-      migrations: {
-        directory: './db/migrations'
+    client: 'pg',
+    connection: process.env.DATABASE_URL + `?ssl=true`,
+    migrations: {
+      directory: './db/migrations'
     },
     useNullAsDefault: true
   }
-}
+};

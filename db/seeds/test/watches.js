@@ -1,38 +1,90 @@
 const watchBrandsArray = require('../../../mockData/watch-brands.js');
 const watchModelsArray = require('../../../mockData/watch-models.js');
 
-const createBrand = (knex, brandName) => {
-  return knex('watch_brands').insert({
-    brand: brandName.brand
-  }, 'id')
-  .then(watchID => {
-    let watchArray = [];
-    let filteredArray = watchModelsArray.filter(watch => watch.brand === brandName.brand);
-    filteredArray.forEach(filteredWatch => {
-      watchArray.push(createWatch(knex, {
-        brand: JSON.stringify(filteredWatch.brand),
-        model: JSON.stringify(filteredWatch.model),
-        price: filteredWatch.price,
-        brand_id: watchID[0]
-      }));
-    })
-    return Promise.all(watchArray);
-  })
-}
-
-const createWatch = (knex, watch) => {
-  return knex('watch_models').insert(watch);
-}
-
 exports.seed = function(knex, Promise) {
   return knex('watch_models').del()
-  .then(() => knex('watch_brands').del())
-  .then(() => {
-    let brandPromises = [];
-    watchBrandsArray.forEach(brand => {
-      brandPromises.push(createBrand(knex, brand));
+    .then(() => knex('watch_brands').del())
+    .then(() => {
+      return Promise.all([
+        knex('watch_brands').insert([
+          { brand: 'Jaeger-LeCoultre', id: 1 },
+          { brand: 'Patek Philippe & Co.', id: 2 }
+        ])
+          .then(brands => {
+            return knex('watch_models').insert([
+              {
+                brand: 'Jaeger-LeCoultre',
+                model: 'Master Compressor Extreme World Chronograph',
+                price: 10200,
+                id: 10,
+                brand_id: 1
+              },
+              {
+                brand: 'Jaeger-LeCoultre',
+                model: 'Master Ultra Thin Perpetual Calendar',
+                price: 15500,
+                id: 11,
+                brand_id: 1
+              },
+              {
+                brand: 'Jaeger-LeCoultre',
+                model: 'Master Minute Repeater Antoine LeCoultre Watch',
+                price: 144700,
+                id: 12,
+                brand_id: 1
+              },
+              {
+                brand: 'Jaeger-LeCoultre',
+                model: 'Geophysic Universal Time',
+                price: 9900,
+                id: 13,
+                brand_id: 1
+              },
+              {
+                brand: 'Jaeger-LeCoultre',
+                model: 'Master Compressor Chronograph Ceramic & Rose Gold',
+                price: 11750,
+                id: 14,
+                brand_id: 1
+              },
+              {
+                brand: 'Patek Philippe & Co.',
+                model: 'Grand Complications Annual Calendar Moonphase White Gold',
+                price: 70999,
+                id: 15,
+                brand_id: 2
+              },
+              {
+                brand: 'Patek Philippe & Co.',
+                model: 'Grand Complications Platinum Black Strap',
+                price: 87999,
+                id: 16,
+                brand_id: 2
+              },
+              {
+                brand: 'Patek Philippe & Co.',
+                model: 'Sky Moon Tourbillon 6002',
+                price: 1690000,
+                id: 17,
+                brand_id: 2
+              },
+              {
+                brand: 'Patek Philippe & Co.',
+                model: '5110P World Time',
+                price: 50000,
+                id: 18,
+                brand_id: 2
+              },
+              {
+                brand: 'Patek Philippe & Co.',
+                model: 'Split Seconds Chronograph & Perpetual Calendar',
+                price: 279995,
+                id: 19,
+                brand_id: 2
+              }
+            ]);
+          })
+      ]);
     })
-    return Promise.all(brandPromises);
-  })
-  .catch(error => console.log(`Error seeding data: ${error}`));
+    .catch(error => console.log(`Error seeding data: ${error}`));
 };

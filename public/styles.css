@@ -19,7 +19,6 @@ h1 {
 }
 
 div {
-  height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -27,10 +26,24 @@ div {
   align-items: center;
 }
 
+section {
+  width: 80%;
+  height: 500px;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  word-wrap: break-word;
+}
+
 input {
   width: 500px;
   margin-bottom: 30px;
   height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
 }
 
 #submit-button {
