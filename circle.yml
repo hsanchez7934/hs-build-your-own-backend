@@ -10,8 +10,8 @@ test:
   override:
     - npm run test
     - npm run lint
-deployment:
-  production:
-    branch: master
-    heroku:
-      appname: hs-byob-12-17-2017
+# deployment:
+#   production:
+#     branch: master
+#     heroku:
+#       appname: hs-byob-12-17-2017
