@@ -63,7 +63,7 @@ app.post('/api/v1/authenticate', (request, response) => {
   }
 
   verify = email.endsWith('@turing.io');
-  token = jwt.sign(request.body, app.get('secretKey'));
+  token = jwt.sign(request.body, process.env.SECRET_KEY);
 
   if (verify) {
     user = Object.assign({}, request.body, { admin: true, token });
