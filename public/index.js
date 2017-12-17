@@ -1,3 +1,4 @@
+/*eslint-disable */
 $('#submit-button').on('click', getToken);
 
 function getToken() {

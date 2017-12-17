@@ -1,3 +1,4 @@
+/*eslint-disable */
 module.exports = [
   {
     brand: 'A. Lange & Söhne',
@@ -25,7 +26,7 @@ module.exports = [
     price: 70967
   },
   {
-    brand: 'Arnold & Son',   
+    brand: 'Arnold & Son',
     model: 'TES BLUE TOURBILLON',
     price: 162200
   },
@@ -50,7 +51,7 @@ module.exports = [
     price: 13650
   },
   {
-    brand: 'Audemars Piguet',  
+    brand: 'Audemars Piguet',
     model: 'ROYAL OAK FROSTED GOLD',
     price: 60500
   },
@@ -75,7 +76,7 @@ module.exports = [
     price: 132563
   },
   {
-    brand: 'Baume et Mercier',  
+    brand: 'Baume et Mercier',
     model: 'Capeland World Timer',
     price: 11995
   },
@@ -100,7 +101,7 @@ module.exports = [
     price: 2570
   },
   {
-    brand: 'Bell & Ross', 
+    brand: 'Bell & Ross',
     model: 'BR 02 Rose Gold',
     price: 6887
   },
@@ -125,7 +126,7 @@ module.exports = [
     price: 11500
   },
   {
-    brand: 'Breguet',  
+    brand: 'Breguet',
     model: '5717BREU9ZU',
     price: 61000
   },
@@ -150,7 +151,7 @@ module.exports = [
     price: 99000
   },
   {
-    brand: 'Breitling', 
+    brand: 'Breitling',
     model: 'Super Avenger II',
     price: 3650
   },
@@ -175,7 +176,7 @@ module.exports = [
     price: 3425
   },
   {
-    brand: 'Bremont', 
+    brand: 'Bremont',
     model: 'Chronograph GMT Stainless Steel',
     price: 4995
   },
@@ -200,7 +201,7 @@ module.exports = [
     price: 3892
   },
   {
-    brand: 'Cartier', 
+    brand: 'Cartier',
     model: 'Tank Française',
     price: 9300
   },
@@ -225,7 +226,7 @@ module.exports = [
     price: 6900
   },
   {
-    brand: 'Chopard', 
+    brand: 'Chopard',
     model: ' L.U.C Tourbillon Heritage',
     price: 47462
   },
@@ -250,7 +251,7 @@ module.exports = [
     price: 21323
   },
   {
-    brand: 'Corum', 
+    brand: 'Corum',
     model: 'Heritage Classical Billionaire Tourbillon',
     price: 225000
   },
@@ -275,7 +276,7 @@ module.exports = [
     price: 9700
   },
   {
-    brand: 'Frederique Constant', 
+    brand: 'Frederique Constant',
     model: 'Manufacture Slimline Perpetual Calendar',
     price: 5800
   },
@@ -300,7 +301,7 @@ module.exports = [
     price: 2500
   },
   {
-    brand: 'Girard Perregaux', 
+    brand: 'Girard Perregaux',
     model: '1966',
     price: 11592
   },
@@ -325,7 +326,7 @@ module.exports = [
     price: 19999
   },
   {
-    brand: 'Glashütte Original', 
+    brand: 'Glashütte Original',
     model: 'Senator Diary',
     price: 22700
   },
@@ -350,7 +351,7 @@ module.exports = [
     price: 22500
   },
   {
-    brand: 'Hublot', 
+    brand: 'Hublot',
     model: 'Formula 1 King Power F1 Ceramic Limited ',
     price: 28000
   },
@@ -375,7 +376,7 @@ module.exports = [
     price: 23345
   },
   {
-    brand: 'HYT',  
+    brand: 'HYT',
     model: 'H2 Titanium Platinum SQ',
     price: 190000
   },
@@ -400,7 +401,7 @@ module.exports = [
     price: 42071
   },
   {
-    brand: 'IWC Schaffhausen', 
+    brand: 'IWC Schaffhausen',
     model: 'Pilot’s Watch Chronograph The Last Flight Saint Exupery',
     price: 15900
   },
@@ -425,7 +426,7 @@ module.exports = [
     price: 29500
   },
   {
-    brand: 'Jaeger-LeCoultre', 
+    brand: 'Jaeger-LeCoultre',
     model: 'Master Compressor Extreme World Chronograph',
     price: 10200
   },
@@ -450,7 +451,7 @@ module.exports = [
     price: 11750
   },
   {
-    brand: 'Maurice Lacroix', 
+    brand: 'Maurice Lacroix',
     model: 'Masterpiece Retrograde',
     price: 3575
   },
@@ -475,7 +476,7 @@ module.exports = [
     price: 6000
   },
   {
-    brand: 'Montblanc', 
+    brand: 'Montblanc',
     model: '117051',
     price: 14427
   },
@@ -500,7 +501,7 @@ module.exports = [
     price: 45085
   },
   {
-    brand: 'Omega', 
+    brand: 'Omega',
     model: 'Speedmaster Professional Moonwatch',
     price: 7560
   },
@@ -525,7 +526,7 @@ module.exports = [
     price: 3250
   },
   {
-    brand: 'Panerai',  
+    brand: 'Panerai',
     model: 'Luminor Marina 1950 3 Days',
     price: 6651
   },
@@ -550,7 +551,7 @@ module.exports = [
     price: 103000
   },
   {
-    brand: 'Patek Philippe & Co.', 
+    brand: 'Patek Philippe & Co.',
     model: 'Grand Complications Annual Calendar Moonphase White Gold',
     price: 70999
   },
@@ -575,7 +576,7 @@ module.exports = [
     price: 279995
   },
   {
-    brand: 'Piaget', 
+    brand: 'Piaget',
     model: 'Altiplano Double Jeu Paris',
     price: 119000
   },
@@ -600,7 +601,7 @@ module.exports = [
     price: 47400
   },
   {
-    brand: 'Richard Mille', 
+    brand: 'Richard Mille',
     model: 'Bubba Watson Asia Limited Edition ',
     price: 145000
   },
@@ -625,7 +626,7 @@ module.exports = [
     price: 650135
   },
   {
-    brand: 'Roger Dubuis', 
+    brand: 'Roger Dubuis',
     model: 'Excalibur',
     price: 21953
   },
@@ -650,7 +651,7 @@ module.exports = [
     price: 24000
   },
   {
-    brand: 'Rolex', 
+    brand: 'Rolex',
     model: 'Sky Dweller Blue Dial',
     price: 21995
   },
@@ -675,7 +676,7 @@ module.exports = [
     price: 17999
   },
   {
-    brand: 'TAG Heuer', 
+    brand: 'TAG Heuer',
     model: 'Monaco V4',
     price: 70000
   },
@@ -700,7 +701,7 @@ module.exports = [
     price: 1950
   },
   {
-    brand: 'Tudor', 
+    brand: 'Tudor',
     model: 'Grantour Date',
     price: 2377
   },
@@ -725,7 +726,7 @@ module.exports = [
     price: 3699
   },
   {
-    brand: 'Ulysse Nardin', 
+    brand: 'Ulysse Nardin',
     model: 'Monaco Yacht Show 2010 LIMITED EDITION',
     price: 14950
   },
@@ -750,7 +751,7 @@ module.exports = [
     price: 95000
   },
   {
-    brand: 'Vacheron Constantin', 
+    brand: 'Vacheron Constantin',
     model: 'Patrimony',
     price: 13000
   },
@@ -775,7 +776,7 @@ module.exports = [
     price: 42560
   },
   {
-    brand: 'Zenith', 
+    brand: 'Zenith',
     model: 'El Primero Chronomaster 1969 Cohiba Edition',
     price: 13500
   },

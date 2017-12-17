@@ -1,3 +1,4 @@
+/*eslint-disable */
 const watchBrandsArray = require('../../../mockData/watch-brands.js');
 const watchModelsArray = require('../../../mockData/watch-models.js');
 
