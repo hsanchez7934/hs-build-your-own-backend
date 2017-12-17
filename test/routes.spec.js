@@ -82,7 +82,7 @@ describe('API Routes', () => {
         .catch(error => error);
     });
 
-  it(`should retrieve all brands`, () => {
+  it.skip(`should retrieve all brands`, () => {
     return chai.request(server)
       .get(`/api/v1/brands`)
       .then(response => {
@@ -95,7 +95,7 @@ describe('API Routes', () => {
         response.body[0].id.should.equal(1);
         response.body[1].id.should.equal(2);
 
-        for (let item = 0; item < response.body.length; item++) {
+        for (var item = 0; item < response.body.length; item++) {
           response.body[item].should.have.property('brand');
           response.body[item].should.have.property('id');
           response.body[item].should.be.a('object');
@@ -104,7 +104,7 @@ describe('API Routes', () => {
       .catch(error => error);
   });
 
-  it(`should retrieve all watch models`, () => {
+  it.skip(`should retrieve all watch models`, () => {
     return chai.request(server)
       .get(`/api/v1/watches`)
       .then(response => {
@@ -116,7 +116,7 @@ describe('API Routes', () => {
         response.body[8].price.should.equal(50000);
         response.body[8].id.should.equal(18);
         response.body[8].brand_id.should.equal(2);
-        for (let item = 0; item < response.body.length; item++) {
+        for (var item = 0; item < response.body.length; item++) {
           response.body[item].should.have.property('brand');
           response.body[item].should.have.property('id');
           response.body[item].should.have.property('price');
@@ -127,7 +127,7 @@ describe('API Routes', () => {
       });
   });
 
-  it(`should retrieve all watch models that
+  it.skip(`should retrieve all watch models that
            match min and max parameter requirements,
            this test has a min of 0 and max of 3000
            for price range`, () => {
@@ -139,8 +139,8 @@ describe('API Routes', () => {
           response.body.should.be.a('array');
           response.body.length.should.equal(5);
 
-          for (let item = 0; item < response.body.length; item++) {
-            let price = response.body[item].price;
+          for (var item = 0; item < response.body.length; item++) {
+            var price = response.body[item].price;
 
             response.body[item].should.have.property('brand');
             response.body[item].should.have.property('id');
@@ -195,7 +195,7 @@ describe('API Routes', () => {
       .catch(error => error);
   });
 
-  it(`should retrieve all watch models by brand, using brand id`, () => {
+  it.skip(`should retrieve all watch models by brand, using brand id`, () => {
     return chai.request(server)
       .get(`/api/v1/brands/2/watches`)
       .then(response => {
@@ -204,7 +204,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(5);
 
-        for (let item = 0; item < response.body.length; item++) {
+        for (var item = 0; item < response.body.length; item++) {
           response.body[item].should.be.a('object');
           response.body[item].should.have.property('brand');
           response.body[item].should.have.property('price');
