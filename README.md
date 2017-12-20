@@ -12,9 +12,28 @@ You can apply for a for a web token at the main page.  Email must end with turin
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-###GET Brands###
+### GET Brands ###
 
 /api/v1/brands
 
-Make a fetch call to this endpoint to retrieve a list of the 32 top luxury watch brands
+Make a get request to this endpoint to retrieve a list of the 32 top luxury watch brands
+
+Example of response format:
+
+
 ![JSON Reponse](./assets/getbrands.png)
+
+
+### Get Watch Models ###
+
+/api/v1/brand/:id/watches
+
+Make a get request to this endpoint to retrieve a list of five watch models by brand.  Response will provide
+watch price, model name, model brand, and brand_id.  
+
+Must pass in brand id as a param in URL.
+
+Example of response format:
+
+
+![JSON Reponse](./assets/watchmodels.png)
