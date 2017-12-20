@@ -274,7 +274,7 @@ Content: { error: Internal Server Error }
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-### Delete watch watch model ###
+### Delete watch model ###
 
 /api/v1/watches/:id
 
