@@ -11,3 +11,11 @@ You can apply for a for a web token at the main page.  Email must end with turin
 [BYOB Link](https://hs-byob-12-17-2017.herokuapp.com/)
 
 ------------------------------------------------------------------------------------------------------------------------------
+
+###GET Brands###
+
+/api/v1/brands
+
+Make a fetch call to this endpoint to retrieve a list of the 32 top luxury watch brands
+
+
