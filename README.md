@@ -9,3 +9,5 @@ The API is REST API and uses OAuth 1.0a for user authentication purposes. Curren
 
 You can apply for a for a web token at the main page.  Email must end with turing.io to have admin access.
 [BYOB Link](https://hs-byob-12-17-2017.herokuapp.com/)
+
+------------------------------------------------------------------------------------------------------------------------------
