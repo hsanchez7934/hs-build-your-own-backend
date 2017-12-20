@@ -83,7 +83,7 @@ describe('API Routes', () => {
         .catch(error => error);
     });
 
-  it.skip(`should retrieve all brands`, () => {
+  it(`should retrieve all brands`, () => {
     return chai.request(server)
       .get(`/api/v1/brands`)
       .then(response => {
@@ -105,7 +105,7 @@ describe('API Routes', () => {
       .catch(error => error);
   });
 
-  it.skip(`should retrieve all watch models`, () => {
+  it(`should retrieve all watch models`, () => {
     return chai.request(server)
       .get(`/api/v1/watches`)
       .then(response => {
@@ -128,7 +128,7 @@ describe('API Routes', () => {
       });
   });
 
-  it.skip(`should retrieve all watch models that
+  it(`should retrieve all watch models that
            match min and max parameter requirements,
            this test has a min of 0 and max of 3000
            for price range`, () => {
@@ -196,7 +196,7 @@ describe('API Routes', () => {
       .catch(error => error);
   });
 
-  it.skip(`should retrieve all watch models by brand, using brand id`, () => {
+  it(`should retrieve all watch models by brand, using brand id`, () => {
     return chai.request(server)
       .get(`/api/v1/brands/2/watches`)
       .then(response => {
@@ -217,7 +217,7 @@ describe('API Routes', () => {
       });
   });
 
-  it.skip(`should be able to post a new brand
+  it(`should be able to post a new brand
       to watch_brands database`, (done) => {
       chai.request(server)
         .post(`/api/v1/brands`)
@@ -240,7 +240,7 @@ describe('API Routes', () => {
         .post(`/api/v1/brands`)
         .send({
           brand: 'Fossil',
-          token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlY3RvckBnbWFpbC5jb20iLCJhcHBOYW1lIjoiaGVsbG8gd29ybGQiLCJpYXQiOjE1MTM1MTMxNTB9.-9UBswDe3mB4IKdRCh0rgczQm_qU1e2o2fq1km4PyvM`
+          token: `sum-key`
         })
         .then(response => {
           response.should.have.status(403);
