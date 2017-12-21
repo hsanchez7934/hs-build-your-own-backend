@@ -1,4 +1,4 @@
-/*eslint-disable */
+
 module.exports = [
   {
     brand: 'A. Lange & Söhne',
@@ -512,11 +512,13 @@ module.exports = [
   },
   {
     brand: 'Omega',
+    //eslint-disable-next-line
     model: 'Speedmaster Professional Moonwatch Speedmaster Dark Side Of the Moon',
     price: 7500
   },
   {
     brand: 'Omega',
+    //eslint-disable-next-line
     model: 'Seamaster 1960s Calibre 500 Auto Mens Gold Plated Vintage Swiss Watch',
     price: 1701
   },
@@ -587,11 +589,13 @@ module.exports = [
   },
   {
     brand: 'Piaget',
+    //eslint-disable-next-line
     model: 'Altiplano Manual in Rose Gold on Black Alligator Leather Strap with Black Dial',
     price: 21900
   },
   {
     brand: 'Piaget',
+    //eslint-disable-next-line
     model: 'Altiplano Flyback Chronograph Dual Time 18k Rose Gold 41mm Silver Dial',
     price: 22025
   },
@@ -732,6 +736,7 @@ module.exports = [
   },
   {
     brand: 'Ulysse Nardin',
+    //eslint-disable-next-line
     model: '780-90 Alexander the Great Tourbillon Jacquemart Min. Repeater White Gold on Leather with Black Diamond Dial',
     price: 650750
   },

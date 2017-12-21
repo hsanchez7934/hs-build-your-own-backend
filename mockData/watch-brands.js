@@ -1,4 +1,4 @@
-/*eslint-disable */
+
 module.exports = [
   {
     brand: 'A. Lange & Söhne'

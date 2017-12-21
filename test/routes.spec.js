@@ -1,4 +1,4 @@
-/*eslint-disable */
+
 const chai = require('chai');
 const should = chai.should();
 const expect = chai.expect;
@@ -223,6 +223,7 @@ describe('API Routes', () => {
         .post(`/api/v1/brands`)
         .send({
           brand: 'Fossil',
+          //eslint-disable-next-line
           token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlY3RvckB0dXJpbmcuaW8iLCJhcHBOYW1lIjoiZ2V0IHdhdGNoZXMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTEzNDg3MjA4fQ.vXL4HIhCfabw2bcrsQozpNesWB2M6VgNuwObUidk9rA`
         })
         .then(response => {
@@ -257,6 +258,7 @@ describe('API Routes', () => {
           model: `The commuter`,
           price: 175,
           brand: `Patek Philippe & Co.`,
+          //eslint-disable-next-line
           token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlY3RvckB0dXJpbmcuaW8iLCJhcHBOYW1lIjoiZ2V0IHdhdGNoZXMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTEzNDg3MjA4fQ.vXL4HIhCfabw2bcrsQozpNesWB2M6VgNuwObUidk9rA`
         })
         .then(response => {
@@ -303,6 +305,7 @@ describe('API Routes', () => {
 
   it(`should be able to delete brand by id`, () => {
     chai.request(server)
+    //eslint-disable-next-line
       .delete(`/api/v1/brands/2?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlY3RvckB0dXJpbmcuaW8iLCJhcHBOYW1lIjoiZ2V0IHdhdGNoZXMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTEzNDg3MjA4fQ.vXL4HIhCfabw2bcrsQozpNesWB2M6VgNuwObUidk9rA`)
       .then(response => {
         response.should.have.status(204);
@@ -311,6 +314,7 @@ describe('API Routes', () => {
 
   it(`should be able to delete watch by id`, () => {
     chai.request(server)
+    //eslint-disable-next-line
       .delete(`/api/v1/watches/10?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlY3RvckB0dXJpbmcuaW8iLCJhcHBOYW1lIjoiZ2V0IHdhdGNoZXMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTEzNDg3MjA4fQ.vXL4HIhCfabw2bcrsQozpNesWB2M6VgNuwObUidk9rA`)
       .then(response => {
         response.should.have.status(204);

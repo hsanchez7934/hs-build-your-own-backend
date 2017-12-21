@@ -1,4 +1,4 @@
-/*eslint-disable */
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -195,6 +195,7 @@ app.patch('/api/v1/brands/:id', (request, response) => {
 app.patch('/api/v1/watches/:id', (request, response) => {
   const { id } = request.params;
   const watchAlternation = request.body;
+  //eslint-disable-next-line
   if (!watchAlternation.brand || !watchAlternation.price || !watchAlternation.model) {
     return response.status(422).json(
       { error: `Must send patch as object
@@ -239,6 +240,7 @@ app.delete('/api/v1/watches/:id', checkAuthorization, (request, response) => {
 });
 
 app.listen(app.get('port'), () => {
+  //eslint-disable-next-line
   console.log(`${app.locals.title} is running on ${app.get('port')}.`);
 });
 

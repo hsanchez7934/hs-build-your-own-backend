@@ -1,4 +1,4 @@
-/*eslint-disable */
+
 $('#submit-button').on('click', getToken);
 
 function getToken() {
@@ -29,6 +29,7 @@ function getToken() {
         <p>Token: ${response.user.token}</p>
       `);
     })
+    //eslint-disable-next-line
     .catch(error => console.log(error));
   $('#email-input').val('');
   $('#app-name-input').val('');
