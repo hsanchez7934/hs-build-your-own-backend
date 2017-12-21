@@ -217,7 +217,7 @@ describe('API Routes', () => {
       });
   });
 
-  it(`should be able to post a new brand
+  it.skip(`should be able to post a new brand
       to watch_brands database`, (done) => {
       chai.request(server)
         .post(`/api/v1/brands`)
@@ -251,7 +251,7 @@ describe('API Routes', () => {
     });
 
   it(`should be able to post a new watch
-      to watch_brands database`, (done) => {
+      to watch_models database`, (done) => {
       chai.request(server)
         .post(`/api/v1/brands/1/watches`)
         .send({
